@@ -1,8 +1,17 @@
 // bakground color
 $bgColor: #d6e2f0;
+
 // background card and qrCode
 $bgCard: #ffffff;
 $bgQrcode: #2e80fa;
+$bgShadow: 0 0 10px rgba(0,0,0,0.15), 
+0 0 100px rgba(0,0,0,0.10);
+
 // color text - title
 $bgTitle: #2e7ffa;
 $bgText: #999999;
+
+// Card size
+$width: 330px;
+$height: 485px;
+
