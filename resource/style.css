@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+section {
+  height: 100%;
+  position: relative;
+  background-color: #d6e2f0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .card {
+  width: 330px;
+  height: 485px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0 0 100px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+section .cardContent {
+  text-align: center;
+  padding: 0 10px;
+}
+section .cardContent h1 {
+  color: #2e7ffa;
+  font-size: 2rem;
+  margin: 0 0 15px 0;
+}
+section .cardContent p {
+  color: #999999;
+  font-size: 1.1rem;
+}
+section .cardImage {
+  width: 290px;
+  border-radius: 18px;
+  height: 290px;
+  background-color: #2e80fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .cardImage img {
+  border-radius: 18px;
+  width: 85%;
+  height: 85%;
+}
+section .cardLink {
+  position: absolute;
+  gap: 10px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .cardLink a {
+  text-decoration: none;
+  color: #2e80fa;
+}/*# sourceMappingURL=style.css.map */
