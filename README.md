@@ -23,7 +23,7 @@ https://fonts.google.com/specimen/Outfit?query=out
 
 ## :desktop_computer: Deployed
 
-
+https://darneees.github.io/QR-code-Component/
 
 <p align="center">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
