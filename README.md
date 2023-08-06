@@ -1,4 +1,4 @@
-![banner](https://github.com/darneees/QR-code-Component/assets/79709843/c7f575af-eb45-4600-9a97-fcb800b90a8e)
+![banner](https://github.com/darneees/QR-code-Component/assets/79709843/15eb7f95-dc34-482d-baf2-263fc86424a2)
 
 <h1>
   Qr Code :file_folder:
