@@ -10,6 +10,15 @@
     font-family: 'Outfit', sans-serif;
 }
 
+:root {
+    --primary: #{$bgColor};
+    --secundary: #{$bgCard};
+    --tertiary: #{$bgQrcode};
+    --quaternary: #{$bgTitle};
+    --quinary: #{$bgText};
+    --septenary: #{$bgShadow};
+}
+
 @mixin sizeContent() {
     height: 100vh;
     width: 100vw;
@@ -23,58 +32,66 @@
 }
 
 section {
-    height: 100%;
-    position: relative;
-    background-color: $bgColor;
     @include sizeContent();
     @include aligItems(center, center, column);
 
+    position: relative;
+    background-color: var(--primary);
+
     .card {
-        width: 330px; height: 485px;
-        background-color: $bgCard;
-        border-radius: 30px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.15), 
-                    0 0 100px rgba(0,0,0,0.10);
-        padding: 20px 20px 50px 20px;
         @include aligItems(space-between, center, column);
+
+        width: $width; height: $height;
+        background-color: var(--secundary);
+        border-radius: 30px;
+        box-shadow: var(--septenary);
+        padding: 20px 20px 50px 20px;
     }
 
     .cardContent {
         text-align: center;
         padding: 0 10px;
+
         h1 {
-            color: $bgTitle;
+            color: var(--quaternary);
             font-size: 2rem;
             margin: 0 0 15px 0;
         }
 
         p {
-            color: $bgText;
+            color: var(--quinary);
             font-size: 1.1rem;
         }
     }
 
     .cardImage {
-        width: 290px; border-radius: 18px;
-        height: 290px; background-color: $bgQrcode;
         @include aligItems(center, center, column);
+        $size: 290px;
+        $radius: 18px;
+
+        width: $size; height: $size;
+        border-radius: $radius;
+        background-color: var(--tertiary);
 
         img {
-            border-radius: 18px;
-            width: 85%;
-            height: 85%;
+            $size: 85%;
+
+            border-radius: $radius;
+            width: $size;
+            height: $size;
         }
     }
 
     .cardLink {
+        @include aligItems(center, center, column);
+
         position: absolute;
         gap: 10px;
-        top: 30px;
-        @include aligItems(center, center, column);
+        top: 35px;
 
         a {
             text-decoration: none;
-            color: $bgQrcode;
+            color: var(--tertiary);
         }
     }
 
